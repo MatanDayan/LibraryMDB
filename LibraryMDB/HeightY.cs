@@ -8,8 +8,9 @@ namespace LibraryMDB
 {
     class HeightY: IComparable<HeightY>
     {
-        double _y;
-        int _amount;
+        public double _y { get; private set; }
+        public int _amount { get;  set; }
+        
 
         public HeightY(double y ,int amount )
         {

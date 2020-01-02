@@ -126,6 +126,7 @@
     <Compile Include="ICloneable.cs" />
     <Compile Include="Manager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TimeData.cs" />
     <EmbeddedResource Include="Properties\LibraryMDB.rd.xml" />
   </ItemGroup>
   <ItemGroup>

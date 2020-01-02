@@ -72,8 +72,7 @@ namespace LibraryMDB
         public bool Search(T item, out T foundItem)
         {
             foundItem = default(T);
-            Node tmp;
-            tmp = root;
+            Node tmp = root;
 
             while (tmp != null)
             {
@@ -93,6 +92,7 @@ namespace LibraryMDB
                 }
 
             }
+            return false;
 
         }
 

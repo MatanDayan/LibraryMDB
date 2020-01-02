@@ -8,16 +8,20 @@ namespace LibraryMDB
 {
     class BaseX : IComparable<BaseX>
     {
-        double _x;
-        BST<HeightY> yTree;
-
+        public double X { get; private set; }
+        public BST<HeightY> yTree { get; private set; }
+        public BaseX(double PosX )
+        {
+            this.X = PosX;
+            yTree = new BST<HeightY>();
+        }
         public int CompareTo(BaseX other)
         {
-            if (_x == other._x)
+            if (X == other.X)
             {
                 return 0;
             }
-            else if (_x > other._x)
+            else if (X > other.X)
             {
                 return 1;
             }
