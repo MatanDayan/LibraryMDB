@@ -16,7 +16,8 @@ namespace LibraryMDB
             this.DateTime = dateTime;
             this.x = Px;
             this.y = Py;
-        }
+            public int MyProperty { get; set; }
+    }
 
 
 
